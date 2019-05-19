@@ -9,8 +9,9 @@ h2 {
 }
 
 .box {
-    width: 200px;
-    height: 300px;
+    left: 50px;
+    width: 400px;
+    height: 400px;
     position: relative;
     transform-style: preserve-3d;
     transform: translateZ(-50px);
@@ -22,21 +23,21 @@ h2 {
 
 .box__face--back {
     background-color: red;
-    width: 300px;
+    width: 400px;   /* adjust right wall and floor */
     height: 200px;
     transform: rotateY(180deg) translateZ(50px);
 }
 
 .box__face--floor {
     background-color: gray;
-    width: 300px;
-    height: 100px;
-    top: 50px;
+    width: 400px;
+    height: 400px; /* adjust to make floor larger */
+    top: -100px;     /* adjust top to level floor with walls */
     transform: rotateX(-90deg) translateZ(100px);
 }
 
 .box__face--right {
-    transform: rotateY(90deg) translateZ(150px);
+    transform: rotateY(90deg) translateZ(250px); /* adjust per pixel? with back wall */
 }
 
 .box__face--left {
@@ -46,9 +47,9 @@ h2 {
 .box__face--right,
 .box__face--left {
     background-color: darkred;
-    width: 100px;
+    width: 400px;
     height: 200px;
-    left: 100px;
+    left: -50px;
 }
 
 .box.show-back {
