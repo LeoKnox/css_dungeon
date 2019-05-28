@@ -29,7 +29,7 @@ h2 {
 }
 
 .box__face--floor {
-    background-color: gray;
+    background-color: darkgray;
     width: 400px;
     height: 400px; /* adjust to make floor larger */
     top: -100px;     /* adjust top to level floor with walls */
