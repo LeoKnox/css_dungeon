@@ -1,6 +1,23 @@
 <link href="/style.css" rel="stylesheet" type="text/css">
+<script src="/script.js"></script>
 
 <h2>Working</h2>
+<div class="menu">
+    <form>
+        <label>Length</label>
+        <input type="text">
+        <br>
+        <label>Width</label>
+        <input type="text">
+        <br>
+        <label>Doors</label>
+        <label onclick="addDoor()">+</label>
+        <button>-</button>
+        <br>
+        <div id="doors"></div>
+        <button>Submit</button>
+    </form>
+</div>
 <div class="scene">
     <div class="box">
         <div class="box__face box__face--back"></div>
