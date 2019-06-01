@@ -92,3 +92,12 @@ input {
     width: 16px;
     height: 16px;
 }
+
+.bButton {
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    background-color: darkgray;
+    border: 1px solid black;
+    padding: 3px;
+}
