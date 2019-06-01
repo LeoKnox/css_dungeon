@@ -73,3 +73,22 @@ h2 {
 .box.show-floor {
     transform: translateZ(-100px) roateX(90deg);
 }
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+   opacity: 1;
+}
+
+input {
+    width:30%;
+}
+
+.aButton {
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    background-color: darkgray;
+    border: 1px solid black;
+    width: 16px;
+    height: 16px;
+}

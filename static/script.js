@@ -1,10 +1,18 @@
-function addDoor() {
-    yeah();
+function removeDoor() {
+    var door = document.getElementById("doors");
+    door.removeChild(door.lastChild);
 }
 
-function yeah() {
+function addDoor() {
     var door = document.createElement("div");
-    door.innerHTML = "<p>tag</p>";
+    var doorNum = document.getElementById("doors").childNodes.length;
     document.getElementById("doors").appendChild(door);
-    alert('yeah');
+    door.innerHTML = `
+        <label>Destination</label>
+        <input type='text' name=destination${doorNum}>
+        <br>
+        <label>Location</label>
+        <input type='number' name=width${doorNum}>
+        <input type='number' name=height${doorNum}>
+        <br><br>`;
 }

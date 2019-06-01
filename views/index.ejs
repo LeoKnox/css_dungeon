@@ -5,17 +5,17 @@
 <div class="menu">
     <form>
         <label>Length</label>
-        <input type="text">
+        <input type="number" step="1" name="height">
         <br>
         <label>Width</label>
-        <input type="text">
+        <input type="number" step="1" name="width">
         <br>
         <label>Doors</label>
-        <label onclick="addDoor()">+</label>
-        <button>-</button>
+        <div onclick="addDoor()" class="aButton">+</div>
+        <div onclick="removeDoor()" class="aButton">-</div>
         <br>
         <div id="doors"></div>
-        <button>Submit</button>
+        <button>Update</button>
     </form>
 </div>
 <div class="scene">
