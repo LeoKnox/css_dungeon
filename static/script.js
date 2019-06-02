@@ -11,8 +11,9 @@ function addDoor() {
         <label>Destination</label>
         <input type='text' name=destination${doorNum}>
         <br>
-        <label>Location</label>
+        <label>Wall</label>
         <input type='number' name=width${doorNum}>
+        <label>Position</label>
         <input type='number' name=height${doorNum}>
         <br><br>`;
 }
